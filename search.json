@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI visual search lab docs",
+    "section": "",
+    "text": "Pilot guide: how to run a pilot session, resume after an interruption, and send the data back."
+  },
+  {
+    "objectID": "pilot/index.html",
+    "href": "pilot/index.html",
+    "title": "Running the pilot",
+    "section": "",
+    "text": "You’ll need PsychoPy standalone 2025.1 or newer and the unzipped ai-timing-latest folder. Don’t move any files inside that folder.\nA session has 46 practice trials and 900 main trials (15 blocks of 60, with no AI or with one of two labelled AIs). With breaks it takes about an hour."
+  },
+  {
+    "objectID": "pilot/index.html#open-the-launcher",
+    "href": "pilot/index.html#open-the-launcher",
+    "title": "Running the pilot",
+    "section": "1. Open the launcher",
+    "text": "1. Open the launcher\nOpen PsychoPy. Click the Open button (the folder icon) and select scripts/launch.py in the experiment folder.\n\n\n\nOpen button in PsychoPy"
+  },
+  {
+    "objectID": "pilot/index.html#run-it",
+    "href": "pilot/index.html#run-it",
+    "title": "Running the pilot",
+    "section": "2. Run it",
+    "text": "2. Run it\nlaunch.py opens in the Coder window. Check that the switch next to Pilot is set to Run, then click the green ▶ button.\n\n\n\nRun switch and play button"
+  },
+  {
+    "objectID": "pilot/index.html#enter-the-subject-number",
+    "href": "pilot/index.html#enter-the-subject-number",
+    "title": "Running the pilot",
+    "section": "3. Enter the subject number",
+    "text": "3. Enter the subject number\nType the subject number you were assigned. Leave Debug unticked. Click Continue.\n\n\n\nSetup form\n\n\n\n\n\n\n\n\nCaution\n\n\n\nUse each subject number only once. The number sets the order of the conditions."
+  },
+  {
+    "objectID": "pilot/index.html#start-the-experiment",
+    "href": "pilot/index.html#start-the-experiment",
+    "title": "Running the pilot",
+    "section": "4. Start the experiment",
+    "text": "4. Start the experiment\nThe participant details are optional, so you can skip them. Click Start experiment.\n\n\n\nParticipant form\n\n\n\nDuring the session\n\n\n\n\n\n\n\nKey\nAction\n\n\n\n\nF\nAbsent\n\n\nJ\nPresent\n\n\nSpace twice, quickly\nStart each part, or continue after a break\n\n\nP\nPause, save, and close (see below)\n\n\nCtrl+Shift+Q\nEnd the session early (completed trials are saved)\n\n\n\nPsychoPy closes when the session finishes. To run the next participant, start again from step 2."
+  },
+  {
+    "objectID": "pilot/index.html#emergency-stop-and-resume-later",
+    "href": "pilot/index.html#emergency-stop-and-resume-later",
+    "title": "Running the pilot",
+    "section": "Emergency: stop and resume later",
+    "text": "Emergency: stop and resume later\nIf you have to stop partway through:\n\nPress P. The session is saved and the window closes.\nWhen you’re ready to continue, open launch.py and click ▶ again, as in steps 1 and 2.\nOn the setup form, click Resume session… (see the screenshot in step 3). You don’t need to type the subject number.\nGo to data/sessions/ and open the folder for that session. Its name starts with s&lt;subject number&gt;-. Select the session.json file inside it.\nThe session picks up where it stopped. The subject number and participant details are restored automatically.\n\n\n\n\n\n\n\nNote\n\n\n\nResuming restarts from the last break, not the exact trial where you stopped. In the main task that is the start of the current 60-trial section. In practice it is the start of the current practice part. A few trials will repeat, and that is expected.\n\n\nIf you pressed Ctrl+Shift+Q by accident, or PsychoPy crashed, follow the same steps. Resume also works on sessions that were ended early.\nA resumed session saves to a new folder. Keep both folders and send both back."
+  },
+  {
+    "objectID": "pilot/index.html#send-the-data-back",
+    "href": "pilot/index.html#send-the-data-back",
+    "title": "Running the pilot",
+    "section": "5. Send the data back",
+    "text": "5. Send the data back\nOpen data/ in the experiment folder. Zip the sessions folder and send it to Eric.\n\n\n\nZip the sessions folder\n\n\n\nSend every session folder, including incomplete, resumed, and test sessions.\nDon’t include stimuli/. It holds the images and is large.\nThe files contain participant details, so send them through a secure channel. Don’t use plain email."
+  },
+  {
+    "objectID": "pilot/index.html#if-something-goes-wrong",
+    "href": "pilot/index.html#if-something-goes-wrong",
+    "title": "Running the pilot",
+    "section": "If something goes wrong",
+    "text": "If something goes wrong\n\nThe window opened on the wrong monitor: open configs/config.toml in a text editor. Under [display], set screen = 1 (or 2).\nThe experiment froze: wait 60 seconds before closing it, then send back that session’s folder."
+  }
+]

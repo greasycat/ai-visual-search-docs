@@ -1,0 +1,5 @@
+/* Keep the screenshots readable and set them off from the page. */
+main img {
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 6px;
+}
